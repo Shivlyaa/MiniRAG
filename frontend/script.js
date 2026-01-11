@@ -1,4 +1,4 @@
-const API_BASE = "https://shivlyaa-minirag.hf.space/";
+const API_BASE = "https://shivlyaa-minirag.hf.space";
 
 async function ingest() {
   const text = document.getElementById("docInput").value;
@@ -41,4 +41,5 @@ async function ask() {
     citationsEl.appendChild(li);
   });
 }
+
 
