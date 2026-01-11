@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://shivlyaa-minirag.hf.space/";
 
 async function ingest() {
   const text = document.getElementById("docInput").value;
@@ -41,3 +41,4 @@ async function ask() {
     citationsEl.appendChild(li);
   });
 }
+
