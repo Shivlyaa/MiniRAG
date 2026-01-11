@@ -67,39 +67,39 @@ Frontend
 
 ## Project Structure
 
-MiniRAG/
-├── app/
-│   ├── main.py
-│   ├── schemas.py
-│   │
-│   ├── api/
-│   │   ├── ingest.py
-│   │   ├── query.py
-│   │   └── health.py
-│   │
-│   ├── core/
-│   │   ├── config.py
-│   │   └── logging.py
-│   │
-│   └── rag/
-│       ├── chunking.py
-│       ├── embedding.py
-│       ├── retrieval.py
-│       ├── reranking.py
-│       ├── prompting.py
-│       ├── generation.py
-│       └── vector_store.py
-│
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── Dockerfile
-├── requirements.txt
-├── README.md
-└── .env.example
-
+    MiniRAG/
+    ├── app/
+    │   ├── main.py
+    │   ├── schemas.py
+    │   │
+    │   ├── api/
+    │   │   ├── ingest.py
+    │   │   ├── query.py
+    │   │   └── health.py
+    │   │
+    │   ├── core/
+    │   │   ├── config.py
+    │   │   └── logging.py
+    │   │
+    │   └── rag/
+    │       ├── chunking.py
+    │       ├── embedding.py
+    │       ├── retrieval.py
+    │       ├── reranking.py
+    │       ├── prompting.py
+    │       ├── generation.py
+    │       └── vector_store.py
+    │
+    ├── frontend/
+    │   ├── index.html
+    │   ├── script.js
+    │   └── style.css
+    │
+    ├── Dockerfile
+    ├── requirements.txt
+    ├── README.md
+    └── .env.example
+    
 
 ---
 
