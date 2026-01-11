@@ -1,7 +1,6 @@
 from typing import List, Dict
 
 from pinecone import Pinecone
-from pinecone.core.client.exceptions import NotFoundException
 from app.core.config import settings
 
 pc = Pinecone(api_key=settings.pinecone_api_key)
@@ -21,9 +20,9 @@ def clear_index():
     try:
         index = get_index()
         index.delete(delete_all=True)
-    except NotFoundException:
+    except Exception as e:
         # Happens if namespace doesn't exist yet
-        pass
+        print(f"Warning, could not clear index: {e}")
 
 def upsert_chunks(chunks: List[Dict]):
 
@@ -48,4 +47,5 @@ def upsert_chunks(chunks: List[Dict]):
         )
 
     if vectors:
+
         index.upsert(vectors=vectors)
