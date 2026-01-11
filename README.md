@@ -1,4 +1,4 @@
-# MiniRAG — Deterministic Citation-Based Retrieval-Augmented Generation
+# MiniRAG : Deterministic Citation-Based Retrieval-Augmented Generation
 
 MiniRAG is a lightweight, end-to-end Retrieval-Augmented Generation (RAG) system designed to ingest documents, retrieve relevant context, and generate answers with clear, deterministic citations.
 
