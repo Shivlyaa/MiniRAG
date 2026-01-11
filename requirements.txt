@@ -12,7 +12,7 @@ python-dotenv==1.0.1
 
 #RAG Engine
 
-pinecone-client==3.0.2
+pinecone-client==2.2.4
 cohere==5.1.8
 
 
@@ -21,3 +21,4 @@ cohere==5.1.8
 requests==2.31.0
 numpy==1.26.4
 tqdm==4.66.2
+
