@@ -143,11 +143,11 @@ No secrets are committed to the repository.
 
 Example `.env.example`:
 
-COHERE_API_KEY=your_key_here
-PINECONE_API_KEY=your_key_here
-PINECONE_INDEX_NAME=minirag-index
-HF_API_TOKEN=your_key_here
-HF_MODEL_ID=meta-llama/Llama-3.1-8B-Instruct
+        COHERE_API_KEY=your_key_here
+        PINECONE_API_KEY=your_key_here
+        PINECONE_INDEX_NAME=minirag-index
+        HF_API_TOKEN=your_key_here
+        HF_MODEL_ID=meta-llama/Llama-3.1-8B-Instruct
 
 
 On hosted platforms, these values are set using Secrets rather than plain variables.
