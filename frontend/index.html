@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniRAG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>MiniRAG</h1>
+
+    <section>
+      <h2>1. Ingest Document</h2>
+      <textarea id="docInput" placeholder="Paste your document text here..."></textarea>
+      <button onclick="ingest()">Ingest</button>
+      <p id="ingestStatus"></p>
+    </section>
+
+    <section>
+      <h2>2. Ask Question</h2>
+      <input id="questionInput" placeholder="Ask a question about the document " />
+      <button onclick="ask()">Ask</button>
+    </section>
+
+    <section>
+      <h2>Answer</h2>
+      <p id="answer"></p>
+
+      <h3>Citations</h3>
+      <ul id="citations"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
