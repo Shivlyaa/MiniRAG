@@ -229,6 +229,59 @@ The frontend intentionally remains minimal to keep focus on system correctness r
 
 ---
 
+#Evaluation Document
+
+The following document was used for ingestion during the minimal evaluation. All evaluation questions and citations refer exclusively to this text.
+
+Document Text:
+
+In 1956, the Dartmouth Conference officially coined the term “Artificial Intelligence,” bringing together researchers who believed that aspects of learning and intelligence could be described so precisely that a machine could be built to simulate them. Early optimism was high, and researchers predicted rapid progress toward human-level intelligence.
+
+However, the complexity of real-world problems soon became apparent. Early symbolic approaches struggled with uncertainty, incomplete information, and the combinatorial explosion of possible states. As a result, progress slowed, leading to periods often referred to as “AI winters,” where funding and interest temporarily declined.
+
+Despite these setbacks, the foundational ideas from early AI research influenced later developments in machine learning, expert systems, and modern data-driven approaches.
+
+Minimal Evaluation
+
+To validate the correctness of the retrieval and citation pipeline, I performed a small manual evaluation using a single ingested document and five representative questions.
+
+#Evaluation Questions
+
+    Q1: What event officially coined the term Artificial Intelligence?
+    Expected source: Chunk describing the Dartmouth Conference.
+    
+    Q2: What was the initial optimism surrounding early AI research?
+    Expected source: Chunk discussing early predictions of human-level intelligence.
+    
+    Q3: What limitation caused early AI approaches to struggle?
+    Expected source: Chunk explaining real-world complexity.
+    
+    Q4: Did the document mention any modern deep learning techniques?
+    Expected result: Not found.
+    
+    Q5: Does the document discuss ethical concerns of AI?
+    Expected result: Not found.
+
+Observed Behavior
+
+    For questions Q1–Q3, the system retrieved the correct chunks, generated accurate answers, and cited the appropriate chunk indices.
+    
+    For questions Q4–Q5, the system correctly stated that the information was not present in the ingested document and did not hallucinate an answer.
+    
+    Precision and Recall Notes
+    
+    Precision:
+    High. Retrieved chunks were consistently relevant to the question, and answers were grounded only in retrieved context. Citations accurately pointed to the source chunks used.
+    
+    Recall:
+    Acceptable for short documents. Relevant information was retrieved when present, but recall may degrade for larger or more diverse corpora without hybrid retrieval or query expansion.
+
+This evaluation confirms that the system prioritizes correctness and citation integrity over speculative completeness.
+
+
+
+
+
 ## What I Would Improve Next
 
 Hybrid retrieval using keyword and vector search  
